@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Forever 12 || Cartão</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=B612+Mono:ital@0;1&family=Inconsolata:wght@200;300&family=Lato&family=Roboto:ital,wght@0,100;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="header__title">Preencha o formulário para fazer o cartão da Forever 12!</h1>
+    </header>
+
+    <main>
+        <table>
+            <tr>
+                <th style="padding: 10px;">Benefícios:</th>
+                <td>Frete Grátis</td>
+                <td>Promoções especiais</td>
+                <td>Brindes</td>
+                <td>Sistema de pontos*</td>
+            </tr>
+        </table>
+        <h6>*A cada compra você receberá pontos e poderá trocá-los por descontos nas suas próximas peças!</h6>
+
+        <form>
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                <label>Nome completo:</label>
+                <input type="text">
+
+                <label>Data de nascimento:</label>
+                <input type="date" max="2001-12-31">
+
+                <label>Identidade de Gênero:</label>
+                <select>
+                    <option value="homem">Homem</option>
+                    <option value="mulher">Mulher</option>
+                    <option value="outro">Outro</option>
+                    <option value="naodizer">Prefiro não dizer</option>
+                </select>
+
+                <label>E-Mail:</label>
+                <input type="email" placeholder="algo@exemplo.com">
+
+                <label>Número de telefone celular:</label>
+                <input type="tel" placeholder="xx xxxxx-xxxx" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
+
+                <label>Endereço:</label>
+                <input type="text">
+            </fieldset>
+
+            <fieldset>
+                <legend>Comprovantes</legend>
+                <label>Código de Endereçamento Postal (CEP):</label>
+                <input type="text" placeholder="xxxxx-xxx" pattern="[0-9]{5}-[0-9]{3}">
+
+                <label>Comprovante de residência:</label>
+
+                <div class="file">
+                    <input type="file">
+                    <button class="file__button">Carregar</button>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Documentos</legend>
+                <label>Cadastro de Pessoa Física (CPF):</label>
+                <input type="text" placeholder="xxx.xxx.xxx-xx" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}">
+
+                <label>Registro Geral (RG):</label>
+                <input type="text">
+            </fieldset>
+
+            <fieldset>
+                <legend>Login</legend>
+                <label>Nome de Usuário:</label>
+                <input type="text">
+
+                <label>Senha:</label>
+                <input type="password">
+            </fieldset>
+
+            <div class="radio__container">
+                <div>
+                    <input id="sim" type="radio" value="sim" name="simounao">
+                    <label for="sim">Desejo receber novidades e descontos por E-Mail.</label>
+                </div>
+                <div>
+                    <input id="nao" type="radio" value="nao" name="simounao">
+                    <label for="nao">Não desejo receber novidades e descontos por E-Mail.</label>
+                </div>
+            </div>
+
+            <div class="button">
+                <button class="button__submit">Enviar</button>
+            </div>
+        </form>
+        <audio src="Audios/LOFI.mp3" autoplay controls>
+    </main>
+
+    <footer>
+        <span>Formulário criado com ♡ (Bootcamp Reprograma Teens em Novembro de 2020)</span>
+    </footer>
+
+</body>
+
+</html>
